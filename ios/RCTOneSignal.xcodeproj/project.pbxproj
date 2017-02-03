@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C58D9581E44454B008BA124 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C58D9571E44454B008BA124 /* OneSignal.framework */; };
 		FD2CCC851C772B4200B2B24E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2CCC841C772B4200B2B24E /* SystemConfiguration.framework */; };
 		FDB40CC41C5E4E5500CBF09B /* RCTOneSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB40CC31C5E4E5500CBF09B /* RCTOneSignal.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C58D9571E44454B008BA124 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Framework/OneSignal.framework; sourceTree = "<group>"; };
 		3245CDED1BFEE35C00EABF68 /* libRCTOneSignal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTOneSignal.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2CCC841C772B4200B2B24E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		FDB40CC21C5E4E5500CBF09B /* RCTOneSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOneSignal.h; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD2CCC851C772B4200B2B24E /* SystemConfiguration.framework in Frameworks */,
+				2C58D9581E44454B008BA124 /* OneSignal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 		3245CDE41BFEE35C00EABF68 = {
 			isa = PBXGroup;
 			children = (
+				2C58D9571E44454B008BA124 /* OneSignal.framework */,
 				FD2CCC841C772B4200B2B24E /* SystemConfiguration.framework */,
 				3245CDEF1BFEE35C00EABF68 /* RCTOneSignal */,
 				3245CDEE1BFEE35C00EABF68 /* Products */,
@@ -217,7 +221,7 @@
 		3245CE021BFEE35C00EABF68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/**";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -233,7 +237,7 @@
 		3245CE031BFEE35C00EABF68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/**";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
